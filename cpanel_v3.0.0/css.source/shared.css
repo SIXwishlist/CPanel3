@@ -1,0 +1,44 @@
+/*
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@font-face{font-family:'HacenSA';src:url('fonts/HacenSaudiArabia.eot');src:local('Hacen Saudi Arabia'),url('fonts/HacenSaudiArabia.woff') format('woff'),url('fonts/HacenSaudiArabia.ttf') format('truetype'),url('fonts/HacenSaudiArabia.svg#HacenSaudiArabia') format('svg');font-weight:normal;font-style:normal;}
+*/
+
+@font-face{font-family:'MyriadPro';src:url('fonts/MyriadProRegular.eot');src:local('Myriad Pro'),url('fonts/MyriadProRegular.woff') format('woff'),url('fonts/MyriadProRegular.ttf') format('truetype'),url('fonts/MyriadProRegular.svg#MyriadPro') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GESSTwoLight';src:url('fonts/GESSTwoLight.eot');src:local('GESS Two Light'),url('fonts/GESSTwoLight.woff') format('woff'),url('fonts/GESSTwoLight.ttf') format('truetype'),url('fonts/GESSTwoLight.svg#GESSTwoLight') format('svg');font-weight:normal;font-style:normal;}
+
+/*############################################################################*/
+/*#   Shared Styles                                                         #*/
+/*############################################################################*/
+
+body{
+    margin:0;
+    padding:0;
+
+    font-family:'Lato','MyriadPro','Verdana';
+    font-size:13px;
+    color:#000;
+
+    background: url('../images/body-bg.jpg') repeat-x #ffffff;
+}    
+
+h1{
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2{
+    font-weight: normal;
+}
+
+p a{
+    color: #bcbcbc;
+}
+p a:hover{
+    color: #5f5f5f;
+}
+p a:active{
+    color: #5f5f5f;
+}
+
+/*############################################################################*/

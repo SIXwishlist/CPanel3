@@ -1,0 +1,164 @@
+
+body{
+    font-family: 'GESSTwoLight', 'Greta', 'Tahoma';
+    direction:rtl;
+}
+
+/*############################################################################*/
+/*############################################################################*/
+/*############################################################################*/
+
+#top_bar #menu{
+    float: right;
+}
+#top_bar #account{
+    float: left;
+}
+
+/*############################################################################*/
+
+#top_bar a:first-child {
+    padding-left:  8px;
+    padding-right: 27px;
+}
+
+/*############################################################################*/
+
+.path  .cell{
+    border-right: none;
+    border-left: 1px solid #7b95a8;
+}
+.path  .cell:first-child{
+    padding-left:  10px;
+    padding-right: 0px;
+}
+.path  .cell:last-child{
+    border-left: none;
+}
+
+/*############################################################################*/
+
+#module-path{
+    padding: 15px 15px 5px 15px;
+    text-align: right;
+}
+#module-path a{
+    border-right: none;
+    border-left:  2px solid #7b95a8;
+}
+#module-path a:first-child{
+    padding-left:  10px;
+    padding-right: 0px;
+}
+#module-path a:last-child{
+    border-left: none;
+}
+
+/*############################################################################*/
+
+.filters select{
+    padding: 4px 4px 4px 30px;
+    background-position: left 1px center !important;
+}
+
+/*############################################################################*/
+
+.new_label , 
+.search_label , 
+.import_label ,
+.export_label {
+    background-position: left top;
+}
+.top_label {
+    float: left;
+    margin: 10px 8px 0px 8px;
+    padding: 8px 5px 8px 40px;
+}
+
+.top_label_main{
+    float: right;
+}
+
+/*############################################################################*/
+
+#chart_area{
+    direction: ltr;
+}
+
+/*############################################################################*/
+
+form.style1 .label{
+    float: right;
+}
+form.style1 .value{
+    float: right;
+}
+
+form.style1 input[type=submit], 
+form.style1 input[type=reset], 
+form.style1 input[type=button],
+form.style1 button{
+    font-family: 'GESSTwoLight';
+}
+
+/*############################################################################*/
+
+form.style2 .label{
+    float: right;
+}
+form.style2 .value{
+    float: right;
+}
+
+form.style2 input[type=submit], 
+form.style2 input[type=reset], 
+form.style2 input[type=button],
+form.style2 button{
+    font-family: 'GESSTwoLight';
+}
+
+form.style2 input[type="date"], form.style2 input[data-type="date"] {
+    background-position: left 2px center;
+    padding: 2px 2px 2px 20px;
+}
+
+form.style2 select {
+    background-position: left 1px center !important;
+}
+
+/*############################################################################*/
+
+form.style2 .file-upload input {
+    float: right;
+}
+form.style2 .file-upload input[type="button"] {
+    float: right;
+    margin: 0px 20px 1px 0px;
+}
+form.style2 .file-upload input[type=button]:active{
+    margin: 1px 20px 0px 0px;
+}
+
+/*############################################################################*/
+
+.preview .row .label{
+    float: right;
+    text-align: left;
+}
+.preview .row .value{
+    float: right;
+    text-align: right;
+}
+
+/*############################################################################*/
+/*############################################################################*/
+
+#overlay #popup #title-bar #title{    
+    float: right;
+}
+#overlay #popup #title-bar #close{
+    float: left;
+    background-position: left 0 center !important;
+}
+
+/*############################################################################*/

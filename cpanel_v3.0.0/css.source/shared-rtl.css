@@ -1,0 +1,54 @@
+
+
+/*############################################################################*/
+/*#   Body Styles                                                            #*/
+/*############################################################################*/
+
+body {
+    font-family: 'GESSTwoLight', 'Tahoma';
+    direction:rtl
+}
+
+/*############################################################################*/
+
+#share-page-tools{
+    float: right;
+}
+
+/*############################################################################*/
+
+.form_style1 .error{
+    text-align: right;
+}
+
+.form_style1 .main-title{
+    text-align: right;
+}
+.form_style1 .title{
+    text-align: right;
+}
+
+.form_style1 .label {
+    float: right;
+    text-align: right;
+}
+.form_style1 .value {
+    float: right;
+    text-align: right;
+}
+
+.form_style1 .value input{
+    text-align: right;
+    font-family: "GESSTwoLight","Tahoma";
+}
+
+.form_style1 .btn {
+    float: right;
+    font-family: "GESSTwoLight","Tahoma";
+}
+
+.form_style1 .check{
+    float: right;
+    text-align: right;
+}
+

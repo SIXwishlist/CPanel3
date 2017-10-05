@@ -1,0 +1,100 @@
+/*
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+*/
+
+/*
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('fonts/MyriadProRegular.eot');
+    src: local('Myriad Pro'), url('fonts/MyriadProRegular.woff') format('woff'), url('fonts/MyriadProRegular.ttf') format('truetype'), url('fonts/MyriadProRegular.svg#MyriadPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GESSTwoLight';
+    src: url('fonts/GESSTwoLight.eot');
+    src: local('GESS Two Light'), url('fonts/GESSTwoLight.woff') format('woff'), url('fonts/GESSTwoLight.ttf') format('truetype'), url('fonts/GESSTwoLight.svg#GESSTwoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HacenCasablancaLight';
+    src: url('fonts/HacenCasablancaLight.eot');
+    src: local('Hacen Casablanca Light'), url('fonts/HacenCasablancaLight.woff') format('woff'), url('fonts/HacenCasablancaLight.ttf') format('truetype'), url('fonts/HacenCasablancaLight.svg#HacenCasablancaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Condiment';
+    src: url('fonts/Condiment-Regular.eot');
+    src: local('Condiment-Regular'), url('fonts/Condiment-Regular.woff') format('woff'), url('fonts/Condiment-Regular.ttf') format('truetype'), url('fonts/Condiment-Regular.svg#Condiment-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('fonts/CenturyGothic.eot');
+    src: local('Century Gothic'), url('fonts/CenturyGothic.woff') format('woff'), url('fonts/CenturyGothic.ttf') format('truetype'), url('fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EurostileRegular';
+    src: url('fonts/EurostileRegular.eot');
+    src: local('Eurostile Regular'), url('fonts/EurostileRegular.woff') format('woff'), url('fonts/EurostileRegular.ttf') format('truetype'), url('fonts/EurostileRegular.svg#EurostileRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PermanentMarker';
+    src: url('fonts/PermanentMarker.eot');
+    src: local('Permanent Marker'), url('fonts/PermanentMarker.woff') format('woff'), url('fonts/PermanentMarker.ttf') format('truetype'), url('fonts/PermanentMarker.svg#PermanentMarker') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Diwani';
+    src: url('fonts/Diwani.eot');
+    src: local('Diwani'), url('fonts/Diwani.woff') format('woff'), url('fonts/Diwani.ttf') format('truetype'), url('fonts/Diwani.svg#Diwani') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arial-ext';
+    src: url('fonts/arial.eot');
+    src: local('arial'), url('fonts/arial.woff') format('woff'), url('fonts/arial.ttf') format('truetype'), url('fonts/arial.svg#arial') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'times-ext';
+    src: url('fonts/times.eot');
+    src: local('times'), url('fonts/times.woff') format('woff'), url('fonts/times.ttf') format('truetype'), url('fonts/times.svg#times') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+@font-face{
+    font-family:'CenturyGothic';
+    src:url('fonts/CenturyGothic.eot');
+    src:local('CenturyGothic'),url('fonts/CenturyGothic.woff') format('woff'),url('fonts/CenturyGothic.ttf') format('truetype'),url('fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Jzr-Regular';
+    src:url('fonts/Jzr-Regular.eot');
+    src:local('Jzr-Regular'),url('fonts/Jzr-Regular.woff') format('woff'),url('fonts/Jzr-Regular.ttf') format('truetype'),url('fonts/Jzr-Regular.svg#Jzr-Regular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}

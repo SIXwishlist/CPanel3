@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /certs/
+Disallow: /manage/
+Disallow: /config/
+Disallow: /images/
+Disallow: /css/
+Disallow: /js/
+Disallow: /locale/
+Disallow: /logs/
+Disallow: /mvc/
+Disallow: /players/
+Disallow: /resources/
+Disallow: /tmp/
+Disallow: /uploads/
+Sitemap: /sitemap.xml
+
+
+

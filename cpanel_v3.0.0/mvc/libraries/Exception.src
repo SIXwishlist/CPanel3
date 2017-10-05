@@ -1,0 +1,27 @@
+
+/*
+class Exception
+{
+    protected $message = 'Unknown Exception';   // Exception message
+    private   $string;                          // __toString cache
+    protected $code = 0;                        // user defined Exception code
+    protected $file;                            // source filename of Exception
+    protected $line;                            // source line of Exception
+    private   $trace;                           // backtrace
+    private   $previous;                        // previous Exception if nested Exception
+
+    public function __construct($message = null, $code = 0, Exception $previous = null);
+
+    final private function __clone();           // Inhibits cloning of Exceptions.
+
+    final public  function getMessage();        // message of Exception
+    final public  function getCode();           // code of Exception
+    final public  function getFile();           // source filename
+    final public  function getLine();           // source line
+    final public  function getTrace();          // an array of the backtrace()
+    final public  function getPrevious();       // previous Exception
+    final public  function getTraceAsString();  // formatted string of trace
+
+    / * Overrideable * /
+    public function __toString();               // formatted string for display
+}*/

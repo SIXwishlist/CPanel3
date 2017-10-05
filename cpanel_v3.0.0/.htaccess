@@ -1,0 +1,117 @@
+# Use PHP5.3 as default
+#AddHandler application/x-httpd-php53 .php
+
+################################################################################
+
+RewriteEngine On
+
+################################################################################
+
+ErrorDocument 401 /index.php?page=home
+ErrorDocument 403 /index.php?page=home
+ErrorDocument 404 /index.php?page=home
+ErrorDocument 405 /index.php?page=home
+
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+#RewriteCond %{QUERY_STRING} ^referer=.*$
+#RewriteRule ^(.*)$ http://www.hhrd-me.org/$1? [R=301,L]
+#RewriteCond %{QUERY_STRING} ^iframe=.*$
+#RewriteRule ^(.*)$ http://www.hhrd-me.org/$1? [R=301,L]
+#RewriteCond %{HTTP_HOST} !^(www)\.cpanel3\.com$ [NC]
+#RewriteRule ^(.*)$ http://www.hhrd-me.org/$1 [R=301,L]
+
+################################################################################
+
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|swf)$">
+    <IfModule mod_expires.c>
+        ExpiresActive on
+        ExpiresDefault "access plus 30 days"
+    </IfModule>
+    #Header unset ETag
+    #FileETag None
+</FilesMatch>
+
+#php_flag log_errors off
+#php_flag ignore_repeated_errors on
+#php_flag ignore_repeated_source on
+
+################################################################################
+
+
+
+################################################################################
+
+#kill infinite loop
+RewriteCond %{REQUEST_URI} ^/(stats/|missing.html|failed_auth.html|error/).* [NC]
+RewriteRule .* - [L]
+
+################################################################################
+
+#kill infinite loop
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule .* - [L]
+
+################################################################################
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.+)/$ http:/%{HTTP_HOST}/$1 [R=301,L]
+
+################################################################################
+# Redirect Rules
+################################################################################
+
+RewriteRule ^(en|ar)/?$                                                         index.php?lang=$1&page=home                                   [L]
+
+RewriteRule ^(en|ar)/(.*)/1-([0-9]+)-?([0-9]+)?/?$                              index.php?lang=$1&page=section_info&section_id=$3&index=$4    [L]
+RewriteRule ^(en|ar)/(.*)/2-([0-9]+)?/?$                                        index.php?lang=$1&page=target_info&target_id=$3               [L]
+RewriteRule ^(en|ar)/(.*)/3-([0-9]+)/?$                                         index.php?lang=$1&page=embed_info&embed_id=$3                 [L]
+RewriteRule ^(en|ar)/(.*)/4/?$                       				index.php?lang=$1&page=contact_us                             [L]
+
+RewriteRule ^(en|ar)/(.*)/(.*)/5-?([0-9]+)?/?$      				index.php?lang=$1&page=search&search_item=$3&index=$4         [L]
+
+RewriteRule ^(en|ar)/(.*)/6-([0-9]+)-?([0-9]+)?-?([0-9]+)?/?$   		index.php?lang=$1&page=category_info&category_id=$3&options=$4&index=$5     [L]
+RewriteRule ^(en|ar)/(.*)/7-([0-9]+)-?([0-9]+)?/?$   				index.php?lang=$1&page=product_info&product_id=$3                           [L]
+RewriteRule ^(en|ar)/(.*)/8-([0-9]+)-?([0-9]+)?-?([0-9]+)?/?$   		index.php?lang=$1&page=products&parent_id=$3&options=$4&index=$5            [L]
+
+
+RewriteRule ^(en|ar)/(.*)/9-([0-9]+)/?$                                         index.php?lang=$1&page=user_profile&user_id=$3                      [L]
+
+RewriteRule ^(en|ar)/(.*)/10/([0-9]+)/([a-zA-Z0-9]+)/?$                         index.php?lang=$1&page=verify&user_id=$3&ukey=$4                    [L]
+RewriteRule ^(en|ar)/(.*)/11/([0-9]+)/([a-zA-Z0-9]+)/?$                         index.php?lang=$1&page=reset&user_id=$3&ukey=$4                     [L]
+
+RewriteRule ^(en|ar)/(.*)/12/?$                       				index.php?lang=$1&page=cart                                         [L]
+RewriteRule ^(en|ar)/(.*)/13/?$                       				index.php?lang=$1&page=checkout                                     [L]
+
+RewriteRule ^(en|ar)/(.*)/100/?$                                  	        index.php?lang=$1&page=sitemap                                [L]
+RewriteRule ^(en|ar)/rss/?$                          				index.php?lang=$1&page=rss                                    [L]
+RewriteRule ^sitemap.xml/?$                             			index.php?page=sitemap_xml                                    [L]
+RewriteRule ^videositemap.xml/?$                        			index.php?page=video_sitemap_xml                              [L]
+RewriteRule ^captcha/?$                                                         captcha.php                                                   [L]
+
+################################################################################
+
+#RewriteRule ^uploads/embeds/([0-9]+)/(.*)\.(.*)$                     		/cpanel3/uploads/embeds/file_$1.$3                         [L]
+#RewriteRule ^uploads/embeds/(.*)_([0-9]+)\.(.*)$                     		/cpanel3/uploads/embeds/file_$2.$3                         [L]
+#RewriteRule  ^([^/]+)/uploads/embeds/(.*)_([0-9]+)\.(.*)$            		/cpanel3/uploads/embeds/file_$3.$4                         [L]
+
+#RewriteRule  ^(.*)?/?uploads/embeds/icon_([0-9]+)\.(.*)$                 	/cpanel3/uploads/embeds/icon_$2.$3                         [L]
+#RewriteRule  ^(.*)?/?uploads/embeds/(.*)_icon_([0-9]+)\.(.*)$           	/cpanel3/uploads/embeds/icon_$3.$4                         [L]
+#RewriteRule  ^(.*)?/?uploads/embeds/(.*)_([0-9]+)\.(.*)$                 	/cpanel3/uploads/embeds/file_$3.$4                         [L]
+#RewriteRule  ^(.*)?/?uploads/media_center/(.*/)?(.*)_([0-9]+)\.(.*)$     	/cpanel3/uploads/media_center/$2file_$4.$5                 [L]
+
+################################################################################
+
+RewriteRule ^(en|ar)/?(.*)?ajax.php(.*)$      					/cpanel3/ajax.php$3      							[NC,L]
+
+#RewriteRule ^(.*)/js/(.*)$            						/cpanel3/js/$2           							[NC,L]
+#RewriteRule ^(.*)/css/(.*)$           						/cpanel3/css/$2          							[NC,L]
+#RewriteRule ^(.*)/images/(.*)$        						/cpanel3/images/$2       							[NC,L]
+#RewriteRule ^(.*)/resources/(.*)$     						/cpanel3/resources/$2    							[NC,L]
+#RewriteRule ^(.*)/favicons/(.*)$     						/cpanel3/favicons/$2     							[NC,L]
+#RewriteRule ^(.*)/uploads/(.*)$       						/cpanel3/uploads/$2     							[NC,L]
+#RewriteRule ^(.*)/?ajax.php(.*)$      						/cpanel3/ajax.php$2      							[NC,L]
+
+################################################################################

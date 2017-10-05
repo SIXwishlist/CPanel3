@@ -1,0 +1,218 @@
+
+/*############################################################################*/
+/*############################################################################*/
+
+#print-area{
+    display: none;
+    visibility: hidden;
+}
+
+@media print {
+
+    body * {
+        visibility: hidden;
+    }
+
+    #print-area, #print-area * {
+        visibility: visible;
+    }
+
+    #print-area {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    /*#print-area {
+        position: fixed;
+
+        top:   20px;
+        left:  0;
+        right: 0;
+
+        margin: 0 auto;
+        padding: 0px;
+
+        width: 90%;
+        height: 100%;
+        
+        font-size: 120% !important;
+    }*/
+    
+
+    #print-layout{
+        display: block;
+        position: relative;
+
+        margin:  0px auto 0px auto;
+        padding: 60px 45px 60px 45px;
+
+        width:  910px;
+        height: auto;
+
+        background: #fff;
+    }
+
+    #print-layout #logo{
+        display: block;
+        float: right;
+
+        margin:  0px 0px 0px 0px;
+        padding: 40px 0px 0px 0px;
+
+        width:  410px;
+        height: auto;
+
+        font-size: 40px;
+        text-align: center;
+    }
+    #print-layout #info{
+        display: block;
+        float: left;
+
+        margin:  0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+
+        width:  480px;
+        height: auto;
+    }
+
+    #info .head{
+        display: block;
+        float: left;
+
+        margin:  0px 0px 0px 0px;
+        padding: 4px 10px 4px 10px;
+
+        width:  160px;
+        height: auto;
+    }
+    #info .value{
+        display: block;
+        float: left;
+
+        margin:  0px 0px 0px 0px;
+        padding: 4px 10px 4px 10px;
+
+        width:  280px;
+        height: auto;
+
+        background: #f1f1f1;
+    }
+
+    hr{
+        display: block;
+
+        margin:  10px 0px 20px 0px;
+        padding: 0px 0px 0px 0px;
+
+        width:  910px;
+        height: auto;
+
+        color: #696969;
+    }
+
+    #foot-area{
+        display: block;
+        /*position: absolute;
+
+        bottom: 0px;
+        left:   0px;*/
+
+        margin:  100px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+
+        width:  auto;
+        height: auto;
+    }
+
+    ul.small{
+        display: block;
+
+        margin:  10px 0px 10px 0px;
+        padding: 0px 0px 0px 0px;
+
+        width:  910px;
+        height: auto;
+
+        font-size: 13px;
+        color: #696969;
+
+    }
+
+    /*############################################################################*/
+    /*############################################################################*/
+
+    .list-table{
+        font-size: 14px;
+        color: #1e1e1e;
+
+        border: 1px solid #c5c5c5;
+
+        border-bottom: none;
+        border-right: none;
+
+        width: 100%;
+
+        background: #fff;
+
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+
+    .list-table tr{
+        border: none;
+    }
+    .list-table td{
+        padding: 6px 10px 3px 10px;
+
+        border: none;
+
+        vertical-align: top;
+
+        border-right:  1px solid #c5c5c5;
+        border-bottom: 1px solid #c5c5c5;
+    }
+    .list-table td:last-child{
+    }
+
+    .list-table td img {
+        vertical-align: middle;
+        padding:    0px 3px 0px 3px;
+        max-width:  50px;
+        max-height: 50px;
+    }
+
+    .list-table .head{
+        color: #1e1e1e;
+        background: #e1e1e1;
+    }
+    .list-table .foot{
+        font-size: 16px;
+        font-weight: bold;
+        color: #000000;
+        background: #ebebeb;
+    }
+
+    .list-table a{
+        color: #535c54;
+    }
+
+    .ctrl{
+        display: none;
+        visibility: hidden;
+    }
+    
+}
+
+/*############################################################################*/
+/*############################################################################*/

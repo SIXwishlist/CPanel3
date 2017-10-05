@@ -1,0 +1,7 @@
+
+# options the .htaccess files in directories can override.
+# Edit apache/conf/httpd.conf to AllowOverride in .htaccess
+# AllowOverride AuthConfig
+
+# Stop the directory list from being shown
+    Options -Indexes
